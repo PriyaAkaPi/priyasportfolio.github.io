@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priya's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Priya's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#element">Overview</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, my name is <span class="purple">Priya</span>
+                <div>and I am an IT student and also a </div>
+                <span id="element"></span>
+            </div>
+            
+            <div class="rightSection">
+                <img src="images/bg.png" alt="">
+            </div>
+        </section>
+        <hr style="
+        border: 0;
+        background: #ff004f;
+        height: 1.2px;
+        margin: 60px 84px;">
+        <div id="Overview">
+        <section class="secondSection">
+            <span class="gray">An Overview</span>
+            <h1>Home</h1>
+            <div class="box">
+            <div class="vertical-title">
+                Programming Languages
+            </div>
+            <div class="vertical-desc">
+                I know Java,C and a little bit of C++ and Python,
+                among which I am most comfortable with Java.
+            </div>
+             <div class="vertical"></div>
+            <div class="vertical-title">
+                Education
+            </div>
+            <div class="vertical-desc">
+                I have completed my Secondary and Higher Secondary from St. Xavier's Institution.
+                And currently I am pursuing my Bachelor's degree in Technology with the subject of interest IT from Narula 
+                Institute of Technology.
+            </div>
+             <div class="vertical"></div>
+            <div class="vertical-title">
+                Languages
+            </div>
+            <div class="vertical-desc">
+                I am proficient in English,Hindi as well as bengali.
+                I am a native Hindi speaker.
+            </div>
+             <div class="vertical"></div>
+            <div class="vertical-title">
+                Interests
+            </div>
+            <div class="vertical-desc">
+                Music is something that brings me peace.I love writing and composing songs.I am very much into fitness and healthy lifestyle.I also love travelling and exploring new places
+                as well as meeting new people.
+            </div>
+        </section> 
+    </div>
+        
+        <!---------------------------------about---------------------------->
+        <div id="About">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/priyauniform.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>A passionate Information technology student looking forward to work with
+                             a professional work driven environment where I can utilize my skills and 
+                             knowledge, and become a part of the organization’s growth.</p>
+                             
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div id="Skills">
+                
+                        <h1 class="sub-title">Skills</h1>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Programming Languages')">Programming Languages</p>
+                            <p class="tab-links" onclick="opentab('Extra Skills')">Extra Skills</p>
+                            <p class="tab-links" onclick="opentab('Languages')">Languages</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Programming Languages">
+                            <ul>
+                                <li><span>JAVA</span><br>Java- 8/10</li>
+                                <li><span>C PROGRAMMING</span><br>C- 8/10</li>
+                                <li><span>PYTHON</span><br>python- 4/10</li>
+                                <li><span>C++</span><br>C++- 4/10</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Extra Skills">
+                            <ul>
+                                <li><span>COURSE</span><br>Data Science</li>
+                                <li><span>FRONTEND DEVELOPER</span><br>html/css</li>
+                                <li><span>DATA VISUALIZATION</span><br>Through MS Excel/Tableau/SQL<br></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents"id="Languages" >
+                            <ul>
+                                <li><span>ENGLISH</span><br>proficient</li>
+                                <li><span>HINDI</span><br>Native</li>
+                                <li><span>BENGALI</span><br>Fluent</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="education">
+                <div class="container">
+                    <h1 class="sub-title">Education and Qualifications</h1>
+                    <div class="education-list">
+                        <div>
+                            <h2>St Xavier's Institution</h2>
+                            <p>Xth Standard(CISCE)</p>
+                            <a href="#">learn more</a>
+                        </div>
+                        <div>
+                            <h2>St Xavier's Institution</h2>
+                            <p>XIIth Standard(CISCE)</p>
+                            <a href="#">learn more</a>
+                        </div>
+                        <div>
+                            <h2>Narula Institute of Technology</h2>
+                            <p>B.Tech in Information Technology(4th year Student)</p>
+                            <a href="#">learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <!-----------------------------footer----------------------------->
+    <footer>
+        <div class="flex">
+            <div class="footer-first">
+            <h3>Priya's Developer Portfolio</h3></div>
+            <div class="footer-second">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Services</li>
+            </ul>
+            </div>
+        <div class="footer-rights">
+            www.priyasportfolio.com | All rights reserved
+        </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: [' Software Developer', 'Frontend Developer', 'Fitness Enthusiast'],
+            typeSpeed: 50,
+        });
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
